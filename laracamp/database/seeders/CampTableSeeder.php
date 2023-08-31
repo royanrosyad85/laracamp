@@ -30,13 +30,13 @@ class CampTableSeeder extends Seeder
                 'updated_at' => date('Y-m-d H:i:s', time()),
             ],
         ];
-        
+
         // 1st method
         // foreach ($camps as $key => $camp) {
         //     Camp::create($camp);
         // }
-        
-        // 2st method
-        Camp::insert($camps)
+
+        // 2nd method
+        Camp::insert($camps);
     }
 }
