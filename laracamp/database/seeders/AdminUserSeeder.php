@@ -18,6 +18,13 @@ class AdminUserSeeder extends Seeder
             'name' => 'admin',
             'email' => 'admin@laracamp.com',
             'email_verified_at' => date('Y-m-d H:i:s', time()),
+            'password' => \bcrypt('royanrosyad'),
+            'is_admin' => true
+        ]);
+        User::create([
+            'name' => 'owner',
+            'email' => 'saveeennz@gmail.com',
+            'email_verified_at' => date('Y-m-d H:i:s', time()),
             'password' => \bcrypt('savinaar'),
             'is_admin' => true
         ]);
