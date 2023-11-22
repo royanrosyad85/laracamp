@@ -20,9 +20,9 @@
 <body>
 
     @include('components.navbar')
-    <!-- @include('components.navbar') -->
-    
+
     @yield('content')
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
